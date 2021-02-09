@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+body {
+  font-family: Lato;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.bolt-icon::before {
+  content: '\f0e7';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  float: left;
+  margin: 15px 0;
+}
+
+.header__item {
+  background-color: #74cfae;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  padding: 14px 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  background-color: #f2f2f2;
+  font-size: 0%;
+}
+
+.main__heading {
+  color: 	#74cfae;
+  font-size: 90px;
+  font-weight: 700;
+  top: 250px;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.main__heading--sub {
+  color: #c0c0c0;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0 250px 0;
+}
+
+.iphone {
+  background-color: #74cfae;
+  font-size: 0;
+}
+
+.iphone__png {
+  margin: 50px 0 0 15%;
+  float: left;
+}
+
+.iphone__title {
+  color: #fff;
+  font-size: 24px;
+  font-family: Raleway;
+  padding: 50px 0 35px 0;
+  text-align: center;
+}
+
+.iphone__text {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.contents {
+  background-color: #f2f2f2;
+  display: grid;
+  text-align: center;
+}
+
+.contents__title {
+  font-family: Raleway;
+  font-size: 24px;
+  margin: 60px 0 40px 0;
+}
+
+.contents__item {
+  font-size: 0;
+}
+
+.contents__item > li {
+  display: inline-block;
+  margin: 0 100px 80px 0;
+}
+
+.contents__item> li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.contents__text {
+  align-items: center;
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.contents__text--left {
+  color: #333;
+  font-size: 20px;
+  margin-right: 90px;
+}
+
+.contents__text--btn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+}
+
+.skill-info {
+  background-color: #4e4e4e;
+  text-align: center;
+}
+
+.skill-info__title {
+  color: #fff;
+  display: inline-block;
+  padding: 70px 0;
+}
+
+.skill-info__item {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.skill-info__item li {
+  display: inline-block;
+  padding-right: 180px;
+  margin: 0 auto;
+}
+
+.skill-info__item:last-child li {
+  padding-right: 0;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+figcaption {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer {
+  width: 100%;
+}
