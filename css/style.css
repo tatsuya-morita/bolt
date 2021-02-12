@@ -33,6 +33,7 @@ body {
   float: right;
   font-size: 12px;
   padding: 14px 20px;
+  text-decoration: none;
 }
 
 .header__item:hover {
@@ -92,7 +93,7 @@ body {
 
 .iphone__text {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .clearfix:after {
@@ -155,6 +156,7 @@ body {
   display: inline-block;
   font-size: 12px;
   padding: 14px 20px;
+  text-decoration: none;
   transition: color ease 0.3s;
   vertical-align: top;
 }
@@ -224,6 +226,7 @@ footer {
   width: 185px;
   padding: 20px;
   transition: color ease ;
+  text-decoration: none;
 }
 
 .fab:hover {
