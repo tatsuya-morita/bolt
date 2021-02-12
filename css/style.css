@@ -15,22 +15,29 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+  padding: 15px 0;
 }
 
-.bolt-icon::before {
+.bolt-size::before {
+  color: #4e4e4e;
   content: '\f0e7';
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   float: left;
-  margin: 15px 0;
 }
 
 .header__item {
   background-color: #74cfae;
+  cursor: pointer;
   color: #fff;
   float: right;
   font-size: 12px;
   padding: 14px 20px;
+}
+
+.header__item:hover {
+  color: #333;
+  transition: 0.3s;
 }
 
 .container {
@@ -61,25 +68,31 @@ body {
 .iphone {
   background-color: #74cfae;
   font-size: 0;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .iphone__png {
-  margin: 50px 0 0 15%;
   float: left;
+  width: 37%;
+}
+
+.iphone-container {
+  color: #fff;
+  float: left;
+  text-align: center;
+  width: 63%;
 }
 
 .iphone__title {
-  color: #fff;
   font-size: 24px;
   font-family: Raleway;
-  padding: 50px 0 35px 0;
-  text-align: center;
+  padding-bottom: 35px;
 }
 
 .iphone__text {
-  color: #fff;
   font-size: 20px;
-  text-align: center;
+  line-height: 30px;
 }
 
 .clearfix:after {
@@ -97,30 +110,40 @@ body {
 .contents__title {
   font-family: Raleway;
   font-size: 24px;
-  margin: 60px 0 40px 0;
+  padding: 60px 0 40px 0;
 }
 
 .contents__item {
   font-size: 0;
 }
 
-.contents__item > li {
+.contents__item > a {
+  cursor: pointer;
   display: inline-block;
   margin: 0 100px 80px 0;
+  opacity: 0.7;
+  transition: color ease 0.3s;
 }
 
-.contents__item> li:nth-child(3n) {
+.contents__item > a:nth-child(3n) {
   margin-right: 0;
+}
+
+.contents__item > a:hover{
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .contents__text {
   align-items: center;
-  display: flex;
+  display: inline-block;
+  font-size: 0;
   padding-bottom: 70px;
 }
 
 .contents__text--left {
   color: #333;
+  display: inline-block;
   font-size: 20px;
   margin-right: 90px;
 }
@@ -128,8 +151,18 @@ body {
 .contents__text--btn {
   background-color: #74cfae;
   color: #fff;
+  cursor: pointer;
+  display: inline-block;
   font-size: 12px;
   padding: 14px 20px;
+  transition: color ease 0.3s;
+  vertical-align: top;
+}
+
+.contents__text--btn:hover {
+  color: #333;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .skill-info {
@@ -140,6 +173,8 @@ body {
 .skill-info__title {
   color: #fff;
   display: inline-block;
+  font-size: 25px;
+  font-family: Lato;
   padding: 70px 0;
 }
 
@@ -171,4 +206,49 @@ figcaption {
 
 footer {
   width: 100%;
+}
+
+.sns-contents {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.sns-icon {
+  padding: 200px 0;
+}
+
+.facebook,.basketball,.twitter,.envelope {
+  box-sizing: border-box;
+  color: #74cfae;
+  font-size: 45px;
+  width: 185px;
+  padding: 20px;
+  transition: color ease ;
+}
+
+.fab:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fas:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fas:first-child {
+  pointer-events: none;
+} /*boltアイコン無効化*/
+
+.footer {
+  background-color: #74cfae;
+  width: 100%;
+  padding: 20px 0 25px 0;
+}
+
+.footer-text {
+  color: #fff;
+  float: right;
 }
