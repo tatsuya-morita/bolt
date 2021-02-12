@@ -11,12 +11,16 @@ body {
 
 .header {
   background-color: #fff;
-  left: 0;
   position: fixed;
-  padding: 15px 0;
   top: 0;
+  left: 0;
+  padding: 15px 0;
   width: 100%;
   z-index: 100;
+}
+
+.main {
+  padding-top: 70px;
 }
 
 .bolt-size::before {
@@ -49,7 +53,7 @@ body {
 .title {
   background-color: #f2f2f2;
   font-size: 0%;
-  padding: 320px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
 
 .main__heading {
@@ -57,7 +61,6 @@ body {
   font-family: Raleway;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -65,6 +68,7 @@ body {
   color: #c0c0c0;
   font-family: Raleway;
   font-size: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -121,19 +125,24 @@ body {
   margin-top: 40px;
 }
 
-.contents__item > a {
+.contents__item > li {
   cursor: pointer;
   display: inline-block;
-  margin: 0 100px 80px 0;
+  margin-top: 80px;
+  margin-left: 100px;
   opacity: 0.7;
-  transition: color ease 0.3s;
+  transition: all 0.3s;
 }
 
-.contents__item > a:nth-child(3n) {
-  margin-right: 0;
+.contents__item li:nth-child(-n+3) {
+  margin-top: 0;
 }
 
-.contents__item > a:hover{
+.contents__item li:nth-child(3n-2) {
+  margin-left: 0;
+}
+
+.contents__item li:hover{
   opacity: 1;
   transition: 0.3s;
 }
@@ -142,13 +151,13 @@ body {
   align-items: center;
   display: inline-block;
   font-size: 0;
+  margin-top: 90px;
 }
 
 .contents__text--left {
   color: #333;
   display: inline-block;
   font-size: 20px;
-  margin-right: 90px;
   width: 53%;
 }
 
@@ -158,6 +167,7 @@ body {
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
+  margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
   transition: color ease 0.3s;
@@ -185,17 +195,17 @@ body {
 
 .skill-info__item {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 .skill-info__item li {
   display: inline-block;
-  padding-right: 180px;
-  margin: 0 auto;
+  margin-left: 180px;
 }
 
-.skill-info__item:last-child li {
-  padding-right: 0;
+.skill-info__item li:first-child{
+  margin-left: 0;
 }
 
 figure {
@@ -209,7 +219,7 @@ figcaption {
   padding-top: 15px;
 }
 
-footer {
+.footer {
   width: 100%;
 }
 
@@ -219,26 +229,24 @@ footer {
   text-align: center;
 }
 
-.facebook,.basketball,.twitter,.envelope {
+.facebook,.dribbble,.twitter,.envelope {
   box-sizing: border-box;
   color: #74cfae;
   font-size: 45px;
   width: 185px;
   padding: 20px;
-  transition: color ease ;
+  transition: all 0.3s ;
   text-decoration: none;
 }
 
 .fab:hover {
   background-color: #fff;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .fas:hover {
   background-color: #fff;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .fas:first-child {
@@ -253,5 +261,5 @@ footer {
 
 .footer-text {
   color: #fff;
-  float: right;
+  text-align: right;
 }
