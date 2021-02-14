@@ -39,11 +39,11 @@ body {
   font-size: 12px;
   padding: 14px 12px;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .header__item:hover {
   color: #333;
-  transition: 0.3s;
 }
 
 .container {
@@ -53,7 +53,7 @@ body {
 .title {
   background-color: #f2f2f2;
   font-size: 0%;
-  padding: 250px 0 250px 0;
+  padding: 250px 0;
 }
 
 .main__heading {
@@ -87,7 +87,6 @@ body {
 .iphone-container {
   color: #fff;
   float: left;
-  text-align: center;
   width: 60%;
 }
 
@@ -125,8 +124,7 @@ body {
   margin-top: 40px;
 }
 
-.contents__item > li {
-  cursor: pointer;
+.contents__item li {
   display: inline-block;
   margin-top: 80px;
   margin-left: 100px;
@@ -144,10 +142,9 @@ body {
 
 .contents__item li:hover{
   opacity: 1;
-  transition: 0.3s;
 }
 
-.contents__text {
+/*.contents__text {
   align-items: center;
   display: inline-block;
   font-size: 0;
@@ -164,20 +161,42 @@ body {
 .contents__text--btn {
   background-color: #74cfae;
   color: #fff;
-  cursor: pointer;
   display: inline-block;
   font-size: 12px;
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
-  transition: color ease 0.3s;
+  transition: all 0.3s;
+  vertical-align: top;
+} 
+inline-block記載ver*/
+
+.contents__text {
+  font-size: 0;
+  margin-top: 90px;
+}
+
+.contents__text--left {
+  color: #333;
+  font-size: 20px;
+  float: left;
+  width: 53%;
+}
+
+.contents__text--btn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  float: left;
+  margin-left: 90px;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
   vertical-align: top;
 }
 
 .contents__text--btn:hover {
   color: #333;
-  opacity: 1;
-  transition: 0.3s;
 }
 
 .skill-info {
@@ -225,33 +244,30 @@ figcaption {
 
 .sns-contents {
   background-color: #f2f2f2;
+  font-size: 0%;
   padding: 200px 0;
   text-align: center;
 }
 
-.facebook,.dribbble,.twitter,.envelope {
+.sns-icon li {
   box-sizing: border-box;
-  color: #74cfae;
-  font-size: 45px;
-  width: 185px;
+  cursor: pointer;
+  display: inline-block;
   padding: 20px;
   transition: all 0.3s ;
+  width: 185px;
+  font-size: 45px;
+}
+
+.sns-icon a {
+  color: #74cfae;
   text-decoration: none;
+  text-align: center;
 }
 
-.fab:hover {
+.sns-icon li:hover {
   background-color: #fff;
-  cursor: pointer;
 }
-
-.fas:hover {
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.fas:first-child {
-  pointer-events: none;
-} /*boltアイコン無効化*/
 
 .footer {
   background-color: #74cfae;
