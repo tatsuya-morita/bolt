@@ -141,6 +141,10 @@ body {
   opacity: 1;
 }
 
+.contents__item a {
+  display: inline-block;
+}
+
 /*.contents__text {
   align-items: center;
   display: inline-block;
@@ -224,7 +228,7 @@ inline-block記載ver*/
 
 figcaption {
   color: #fff;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .footer {
@@ -249,6 +253,10 @@ figcaption {
   font-size: 45px;
   padding: 20px;
   width: 185px;
+}
+
+.sns-icon a {
+  display: inline-block;
 }
 
 .sns-icon li:hover {
