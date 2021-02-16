@@ -239,17 +239,16 @@ figcaption {
 }
 
 .sns-icon li {
-  box-sizing: border-box;
-  cursor: pointer;
   display: inline-block;
-  padding: 20px;
   transition: all 0.3s ;
-  width: 185px;
-  font-size: 45px;
 }
 
-.sns-icon a {
+.sns-icon i {
+  box-sizing: border-box;
   color: #74cfae;
+  font-size: 45px;
+  padding: 20px;
+  width: 185px;
 }
 
 .sns-icon li:hover {
