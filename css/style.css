@@ -34,7 +34,6 @@ body {
 .header__item {
   background-color: #74cfae;
   color: #fff;
-  cursor: pointer;
   float: right;
   font-size: 12px;
   padding: 14px 12px;
@@ -52,7 +51,6 @@ body {
 
 .title {
   background-color: #f2f2f2;
-  font-size: 0%;
   padding: 250px 0;
 }
 
@@ -109,7 +107,6 @@ body {
 
 .contents {
   background-color: #f2f2f2;
-  display: grid;
   padding: 60px 0 70px 0;
   text-align: center;
 }
@@ -172,15 +169,16 @@ body {
 inline-block記載ver*/
 
 .contents__text {
-  font-size: 0;
   margin-top: 90px;
 }
 
 .contents__text--left {
   color: #333;
-  font-size: 20px;
+  font-size: 23px;
   float: left;
-  width: 53%;
+  line-height: 27px;
+  padding-left: 80px;
+  width: 60%;
 }
 
 .contents__text--btn {
@@ -192,7 +190,6 @@ inline-block記載ver*/
   padding: 14px 20px;
   text-decoration: none;
   transition: all 0.3s;
-  vertical-align: top;
 }
 
 .contents__text--btn:hover {
@@ -207,7 +204,6 @@ inline-block記載ver*/
 
 .skill-info__title {
   color: #fff;
-  display: inline-block;
   font-size: 25px;
   font-family: Raleway;
 }
@@ -219,7 +215,6 @@ inline-block記載ver*/
 }
 
 .skill-info__item li {
-  display: inline-block;
   margin-left: 180px;
 }
 
@@ -227,14 +222,8 @@ inline-block記載ver*/
   margin-left: 0;
 }
 
-figure {
-  margin: 0 auto;
-}
-
 figcaption {
   color: #fff;
-  font-size: 16px;
-  text-align: center;
   padding-top: 15px;
 }
 
@@ -261,8 +250,6 @@ figcaption {
 
 .sns-icon a {
   color: #74cfae;
-  text-decoration: none;
-  text-align: center;
 }
 
 .sns-icon li:hover {
@@ -271,7 +258,6 @@ figcaption {
 
 .footer {
   background-color: #74cfae;
-  width: 100%;
   padding: 20px 0 25px 0;
 }
 
