@@ -245,35 +245,32 @@ figcaption {
   text-align: right;
 }
 
-/*PCサイズ*/
-@media screen and (min-width:1200px) { 
-
+/*ハンガーバー非表示*/
+@media screen and (min-width:768px) {
+  .sq__menu {
+    display: none;
+  }
 }
 
-/*tabサイズ*/
-@media screen and (min-width:768px) and (max-width:1199px) {
-  
+/*tab,sp共通部分*/
+@media screen and (max-width:1199px) {
   .inner {
     width: 97%;
-  }
-  
-  .iphone {
-    padding: 50px 50px 25px 50px;
   }
 
   .iphone__png {
     width: 100%;
   }
-  
+
   .iphone-container {
-    width: 100%;
     margin-top: 20px;
+    width: 100%;
   }
 
- .iphone__text {
+  .iphone__text {
     line-height: 28px;
   }
-
+  
   .contents__item li:nth-child(-n+6) {
     margin-top: 0;
     margin-left: 0;
@@ -294,7 +291,9 @@ figcaption {
   }
 
   .contents__text--left {
-    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .contents__text--btn {
@@ -311,22 +310,29 @@ figcaption {
   }
 
   .skill-info__item li {
-    margin-top: 80px;
-    margin-left: 0;
+    margin: 80px 0 0 0;
   }
 
   .skill-info__item li:first-child {
-    margin-top: 0%;
+    margin-top: 0;
+  }
+
+  .skill-info__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
+/*tabサイズ*/
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .iphone {
+    padding: 50px 50px 25px 50px;
+  }
+}
 
 /*spサイズ*/
 @media screen  and (max-width:767px) {
-  .inner {
-    width: 97%;
-  }
-  
   .header__item {
     display: none;
   }
@@ -383,65 +389,6 @@ figcaption {
     padding: 50px 0 25px 0;
   }
 
-  .iphone__png {
-    width: 100%;
-  }
-  
-  .iphone-container {
-    margin-top: 20px;
-    width: 100%;
-  }
-
- .iphone__text {
-    line-height: 30px;
-  }
-
-  .contents__item li:nth-child(-n+6) {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .contents__item li:nth-child(4) {
-    margin-top: 80px;
-  }
-
-  .contents__item {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contents__text {
-    margin-top: 80px;
-  }
-
-  .contents__text--left {
-    padding-left: 0;
-    width: 100%;
-  }
-
-  .contents__text--btn {
-    display: inline-block;
-    float: none;
-    margin-top: 40px;
-    margin-left: 0;
-  }
-
-  .skill-info__item {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skill-info__item li {
-    margin-top: 80px;
-    margin-left: 0;
-  }
-
-  .skill-info__item li:first-child {
-    margin-top: 0%;
-  }
-
   .sns-contents {
     padding: 50px 0;
   }
@@ -452,7 +399,7 @@ figcaption {
     flex-direction: column;
   }
 
-  .sns-icon li {
+  .sns-icon li,.sns-icon a {
     width: 100%;
   }
 }
