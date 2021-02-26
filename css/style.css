@@ -9,6 +9,10 @@ body {
   margin: 0 auto;
 }
 
+.Raleway {
+  font-family: Raleway;
+}
+
 .header {
   background-color: #fff;
   position: fixed;
@@ -56,7 +60,6 @@ body {
 
 .main__heading {
   color: 	#74cfae;
-  font-family: Raleway;
   font-size: 90px;
   font-weight: 700;
   text-align: center;
@@ -64,7 +67,6 @@ body {
 
 .main__heading--sub {
   color: #c0c0c0;
-  font-family: Raleway;
   font-size: 30px;
   margin-top: 20px;
   text-align: center;
@@ -90,7 +92,6 @@ body {
 
 .iphone__title {
   font-size: 24px;
-  font-family: Raleway;
 }
 
 .iphone__text {
@@ -112,7 +113,6 @@ body {
 }
 
 .contents__title {
-  font-family: Raleway;
   font-size: 24px;
 }
 
@@ -144,33 +144,6 @@ body {
 .contents__item a {
   display: inline-block;
 }
-
-/*.contents__text {
-  align-items: center;
-  display: inline-block;
-  font-size: 0;
-  margin-top: 90px;
-}
-
-.contents__text--left {
-  color: #333;
-  display: inline-block;
-  font-size: 20px;
-  width: 53%;
-}
-
-.contents__text--btn {
-  background-color: #74cfae;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  margin-left: 90px;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: all 0.3s;
-  vertical-align: top;
-} 
-inline-block記載ver*/
 
 .contents__text {
   margin-top: 90px;
@@ -209,13 +182,12 @@ inline-block記載ver*/
 .skill-info__title {
   color: #fff;
   font-size: 25px;
-  font-family: Raleway;
 }
 
 .skill-info__item {
   display: flex;
-  margin-top: 50px;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .skill-info__item li {
@@ -271,4 +243,216 @@ figcaption {
 .footer-text {
   color: #fff;
   text-align: right;
+}
+
+/*PCサイズ*/
+@media screen and (min-width:1200px) { 
+
+}
+
+/*tabサイズ*/
+@media screen and (min-width:768px) and (max-width:1199px) {
+  
+  .inner {
+    width: 97%;
+  }
+  
+  .iphone {
+    padding: 50px 50px 25px 50px;
+  }
+
+  .iphone__png {
+    width: 100%;
+  }
+  
+  .iphone-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+ .iphone__text {
+    line-height: 28px;
+  }
+
+  .contents__item li:nth-child(-n+6) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .contents__item li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .contents__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents__text {
+    margin-top: 80px;
+  }
+
+  .contents__text--left {
+    width: 85%;
+  }
+
+  .contents__text--btn {
+    display: inline-block;
+    float: none;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .skill-info__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-info__item li {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .skill-info__item li:first-child {
+    margin-top: 0%;
+  }
+}
+
+
+/*spサイズ*/
+@media screen  and (max-width:767px) {
+  .inner {
+    width: 97%;
+  }
+  
+  .header__item {
+    display: none;
+  }
+
+  .sq__menu {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: right;
+    height: 34px;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    width: 52px;
+  }
+
+  .sq__menu--bar span {
+    background-color: #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    height: 2.5px;
+    right: 13px;
+    position: absolute;
+    width: 47%;
+  }
+  
+  .sq__menu--bar span:nth-of-type(1) {
+    top: 28%;
+  }
+
+  .sq__menu--bar span:nth-of-type(2) {
+    top:50%;
+  }
+
+  .sq__menu--bar span:nth-of-type(3) {
+    bottom: 20%;
+  }
+
+  .title {
+    padding: 160px 0 130px 0;
+  }
+
+  .main__heading {
+    font-size: 80px;
+  }
+
+  .main__heading--sub {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .iphone {
+    padding: 50px 0 25px 0;
+  }
+
+  .iphone__png {
+    width: 100%;
+  }
+  
+  .iphone-container {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+ .iphone__text {
+    line-height: 30px;
+  }
+
+  .contents__item li:nth-child(-n+6) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .contents__item li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .contents__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents__text {
+    margin-top: 80px;
+  }
+
+  .contents__text--left {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .contents__text--btn {
+    display: inline-block;
+    float: none;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .skill-info__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-info__item li {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .skill-info__item li:first-child {
+    margin-top: 0%;
+  }
+
+  .sns-contents {
+    padding: 50px 0;
+  }
+
+  .sns-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sns-icon li {
+    width: 100%;
+  }
 }
